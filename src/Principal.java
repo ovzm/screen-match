@@ -1,19 +1,20 @@
+import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
+import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
-import br.com.alura.screenmatch.modelos.Titulo;
 
 public class Principal {
     public static void main(String[] args) {
-       Titulo filme = new Titulo();
-       filme.setNome("Capitão America");
-       filme.setDuracaoEmMinutos(180);
-       filme.setAnoDeLancamento(2020);
+       Filme creed = new Filme();
+       creed.setNome("Capitão America");
+       creed.setDuracaoEmMinutos(180);
+       creed.setAnoDeLancamento(2020);
 
-       filme.exibeFichaTecnica();
-       filme.avalia(8);
-       filme.avalia(5);
-       filme.avalia(4);
+       creed.exibeFichaTecnica();
+       creed.avalia(8);
+       creed.avalia(5);
+       creed.avalia(4);
 
-        System.out.println("Total de avaliações: " + filme.getTotalAvaliacao());
+        System.out.println("Total de avaliações: " + creed.getTotalAvaliacao());
 
         Serie lost = new Serie();
         lost.setNome("Lost");
@@ -22,5 +23,10 @@ public class Principal {
         lost.setTemporadas(3);
         lost.setEspisodiosPorTemporadas(5);
         lost.setMinutosPorEpisodios(50);
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(creed);
+        calculadora.inclui(lost);
+        System.out.println(calculadora.getTempoTotal());
     }
 }
