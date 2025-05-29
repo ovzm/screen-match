@@ -19,5 +19,8 @@ public class Principal {
         lost.setNome("Lost");
         lost.setDuracaoEmMinutos(190);
         lost.setAnoDeLancamento(2019);
+        lost.setTemporadas(3);
+        lost.setEspisodiosPorTemporadas(5);
+        lost.setMinutosPorEpisodios(50);
     }
 }

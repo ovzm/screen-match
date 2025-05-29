@@ -28,6 +28,8 @@ public class Titulo {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
+    public int getDuracaoEmMinutos() { return duracaoEmMinutos; }
+
     public void exibeFichaTecnica() {
         System.out.println("Nome: " + nome);
         System.out.println("Ano de lancamento: " + anoDeLancamento);
