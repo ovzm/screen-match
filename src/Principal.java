@@ -8,6 +8,7 @@ public class Principal {
        creed.setNome("Capitão America");
        creed.setDuracaoEmMinutos(180);
        creed.setAnoDeLancamento(2020);
+       creed.setDiretor("Michael B. Jordan");
 
        creed.exibeFichaTecnica();
        creed.avalia(8);
