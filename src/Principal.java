@@ -1,12 +1,12 @@
-import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
+import br.com.alura.screenmatch.modelos.Titulo;
 
 public class Principal {
     public static void main(String[] args) {
-       Filme filme = new Filme();
+       Titulo filme = new Titulo();
        filme.setNome("Capitão America");
        filme.setDuracaoEmMinutos(180);
        filme.setAnoDeLancamento(2020);
-
 
        filme.exibeFichaTecnica();
        filme.avalia(8);
@@ -14,5 +14,10 @@ public class Principal {
        filme.avalia(4);
 
         System.out.println("Total de avaliações: " + filme.getTotalAvaliacao());
+
+        Serie lost = new Serie();
+        lost.setNome("Lost");
+        lost.setDuracaoEmMinutos(190);
+        lost.setAnoDeLancamento(2019);
     }
 }
